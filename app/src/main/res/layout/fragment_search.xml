@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#FAFAFA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_logo_shaffof" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_semi_bold"
+                    android:text="@string/shaffof_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:text="@string/shaffof_subtitle"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="Готово"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="14sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
+            android:text="Номер"
+            android:textColor="@color/search_title_color"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:minHeight="0dp"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="#CED4DA"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:hint="123456"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/gilroy_light"
+            android:text="Объектнинг номи"
+            android:textColor="@color/search_title_color"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:hint="Масалан: Кишлоқ қурилиш"
+            android:minHeight="0dp"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="#CED4DA"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/gilroy_light"
+            android:text="Буюртмачи"
+            android:textColor="@color/search_title_color"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:minHeight="0dp"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:boxStrokeColor="#CED4DA"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:hint="Палончиев Палончи Палончонович"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:minHeight="0dp"
+                android:textColor="#303030"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="Выберите один из способов поиска и намите “готово” Необязательно заполнять все 3 пункта"
+            android:textColor="#CED4DA" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

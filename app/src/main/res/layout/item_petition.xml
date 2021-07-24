@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    app:cardElevation="3dp"
+    android:elevation="3dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/petitionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:paddingVertical="15dp"
+        android:paddingStart="8dp"
+        android:text="Барча мурожатлар\nмурожатлар"
+        android:textColor="#556164"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/petitionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="0 000"
+        android:textSize="14sp" />
+
+</androidx.cardview.widget.CardView>
