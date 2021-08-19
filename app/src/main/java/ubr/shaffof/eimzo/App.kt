@@ -1,8 +1,10 @@
 package ubr.shaffof.eimzo
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 import uz.sicnt.horcrux.Horcrux
 
+@HiltAndroidApp
 class App : Application() {
 
     companion object {

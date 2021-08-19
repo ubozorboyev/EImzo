@@ -4,7 +4,8 @@ import org.junit.Test
 
 import org.junit.Assert.*
 import com.google.common.truth.Truth.*
-import org.mockito.Mock
+import ubr.shaffof.eimzo.test.AuthUtil
+import ubr.shaffof.eimzo.test.ExampleUnit
 
 /**
  * Example local unit test, which will execute on the development machine (host).

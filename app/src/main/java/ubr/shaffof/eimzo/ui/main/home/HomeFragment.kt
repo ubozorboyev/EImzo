@@ -1,30 +1,30 @@
-package ubr.shaffof.eimzo.ui
+package ubr.shaffof.eimzo.ui.main.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dagger.hilt.android.AndroidEntryPoint
-import ubr.shaffof.eimzo.databinding.FragmentSearchBinding
+import ubr.shaffof.eimzo.databinding.FragmentHomeBinding
 import ubr.shaffof.eimzo.ui.base.BaseFragment
 
-@AndroidEntryPoint
-class SearchFragment : BaseFragment() {
+class HomeFragment : BaseFragment() {
 
-    private lateinit var binding: FragmentSearchBinding
+    private lateinit var binding: FragmentHomeBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentSearchBinding.inflate(inflater, container, false)
+    ): View? {
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
 
     }
+
+
 }

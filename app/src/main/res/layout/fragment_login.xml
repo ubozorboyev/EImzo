@@ -1,181 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:backgroundTint="@color/white"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="18dp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_logo_shaffof" />
-
-
-        <androidx.appcompat.widget.AppCompatTextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/gilroy_semi_bold"
             android:gravity="center"
-            android:text="@string/shaffof_title"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:padding="18dp"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_logo_shaffof" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:gravity="center"
+                android:text="@string/shaffof_title"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroy_medium"
+                android:gravity="center"
+                android:text="@string/shaffof_subtitle"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/gilroy_medium"
-            android:gravity="center"
-            android:text="@string/shaffof_subtitle"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="10sp" />
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp">
 
-    </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Логин"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp" />
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:orientation="vertical"
-        android:paddingHorizontal="40dp">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/gilroy_light"
-            android:text="Логин"
-            android:textColor="@color/hint_color"
-            android:textSize="15sp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
-            android:minHeight="0dp"
-            app:boxCornerRadiusBottomEnd="3dp"
-            app:boxCornerRadiusBottomStart="3dp"
-            app:boxCornerRadiusTopEnd="3dp"
-            app:boxCornerRadiusTopStart="3dp"
-            app:boxStrokeColor="#CED4DA"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="1dp">
-
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/loginLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/gilroy_medium"
-                android:imeOptions="actionNext"
-                android:includeFontPadding="false"
-                android:inputType="text"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
                 android:minHeight="0dp"
-                android:textColor="#303030"
-                android:textSize="14sp" />
+                app:boxCornerRadiusBottomEnd="3dp"
+                app:boxCornerRadiusBottomStart="3dp"
+                app:boxCornerRadiusTopEnd="3dp"
+                app:boxCornerRadiusTopStart="3dp"
+                app:boxStrokeColor="#CED4DA"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="1dp">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:imeOptions="actionNext"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:minHeight="0dp"
+                    android:text="sidiqov"
+                    android:textColor="#303030"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/gilroy_light"
-            android:text="Пароль"
-            android:textColor="@color/hint_color"
-            android:textSize="15sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Пароль"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
-            android:minHeight="0dp"
-            app:boxCornerRadiusBottomEnd="3dp"
-            app:boxCornerRadiusBottomStart="3dp"
-            app:boxCornerRadiusTopEnd="3dp"
-            app:boxCornerRadiusTopStart="3dp"
-            app:boxStrokeColor="#CED4DA"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeWidthFocused="1dp">
-
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
                 android:backgroundTint="@color/white"
-                android:fontFamily="@font/gilroy_medium"
-                android:imeOptions="actionDone"
-                android:inputType="text"
-                android:shadowColor="@color/white"
-                android:textColor="#303030"
+                android:minHeight="0dp"
+                app:boxCornerRadiusBottomEnd="3dp"
+                app:boxCornerRadiusBottomStart="3dp"
+                app:boxCornerRadiusTopEnd="3dp"
+                app:boxCornerRadiusTopStart="3dp"
+                app:boxStrokeColor="#CED4DA"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/gilroy_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:shadowColor="@color/white"
+                    android:text="123123"
+                    android:textColor="#303030"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/verificationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:text="Авторизация"
                 android:textSize="14sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
 
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/verificationButton"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/gilroy_semi_bold"
-            android:insetLeft="0dp"
-            android:insetTop="0dp"
-            android:insetRight="0dp"
-            android:insetBottom="0dp"
-            android:text="Авторизация"
-            android:textSize="14sp" />
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center"
+            android:text="Служба технической поддержки"
+            android:textSize="12sp" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:autoLink="phone"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center"
+            android:text="+998 71 210 11 04"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="14sp" />
     </LinearLayout>
 
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:fontFamily="@font/gilroy_medium"
-        android:gravity="center"
-        android:text="Служба технической поддержки"
-        android:textSize="12sp" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:autoLink="phone"
-        android:fontFamily="@font/gilroy_medium"
-        android:gravity="center"
-        android:text="+998 71 210 11 04"
-        android:textColor="@color/black"
-        android:textColorLink="@color/black"
-        android:textSize="14sp" />
+    <android.widget.ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
 
 
-</LinearLayout>
+</FrameLayout>

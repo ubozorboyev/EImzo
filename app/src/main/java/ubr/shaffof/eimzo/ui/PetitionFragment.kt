@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import ubr.shaffof.eimzo.R
 import ubr.shaffof.eimzo.databinding.FragmentPetitionBinding
 import ubr.shaffof.eimzo.ui.base.BaseFragment
 
+@AndroidEntryPoint
 class PetitionFragment : BaseFragment() {
 
     private lateinit var binding: FragmentPetitionBinding
@@ -17,7 +19,7 @@ class PetitionFragment : BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentPetitionBinding.inflate(inflater, container, false)
         return binding.root
     }

@@ -55,13 +55,12 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.5"
                 android:fontFamily="@font/gilroy_medium"
-                android:text="Центр государственных услуг Андижанского района"
+                android:text="12/04/2021"
                 android:textColor="@color/apt_title_color"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <View
                 android:layout_width="0dp"

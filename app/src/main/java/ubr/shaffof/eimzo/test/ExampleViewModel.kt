@@ -1,4 +1,4 @@
-package ubr.shaffof.eimzo
+package ubr.shaffof.eimzo.test
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,9 +1,11 @@
-package ubr.shaffof.eimzo
+package ubr.shaffof.eimzo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import dagger.hilt.android.AndroidEntryPoint
 import ubr.shaffof.eimzo.databinding.ActivityMainBinding
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
 
